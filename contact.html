@@ -8,91 +8,112 @@
     <link rel="stylesheet" type="text/css" href="_list.css">
     <script type="javascript" src="bootstrap/js/bootstrap.min.js"></script>
 </head>
-<body>
+
 <html>
-<!-- site header -->
-<div class='text-center'>
-    <header class="site-header">
-        <a href="home.html" >
-            <img src="images/logo.png" class="logo"/>
-        </a>
-    </header>
-    <!-- site navigation -->
-    <nav class="site-nav text-center">
-        <ul>
-            <li><a href="about.html">ABOUT US</a></li>
-            <li><a href="design-service.html">DESIGN SERVICES</a></li>
-            <li><a href="portfolio.html">PORTFOLIO</a></li>
-            <li><a href="contact.html">CONTACT US</a></li>
-        </ul>
-    </nav>
-</div>
-
-
-<div class="container">
-    <article class="page">
-        <div class="hr"> </div>  	    
-    </article>
-</div>
-
-
-
-
-    
-    
-    
-   
-    <footer class="site-footer">
+    <body>
         <div class="container">
-            <div class="row">
-                <div class="col-md-4">
-                    <a href="<?php echo home_url(); ?>" >
+            <!-- site header -->
+            <div class='text-center'>
+                <header class="site-header">
+                    <a href="home.html" >
                         <img src="images/logo.png" class="logo"/>
                     </a>
-                </div>
-                <div class="col-md-4">
-                </div>    
-                <div class="col-md-4">
-                    <ul class="social-media">
-                        <li><a href=""><img src="images/twitter.png" /></a></li>
-                        <li><a href=""><img src="images/facebook.png" /></a></li>
-                        <li><a href=""><img src="images/insta.png" /></a></li>
-                        <li><a href=""><img src="images/pintrest.png" /></a></li>
+                </header>
+                <!-- site navigation -->
+                <nav class="site-nav text-center">
+                    <ul>
+                        <li><a href="about.html">ABOUT US</a></li>
+                        <li><a href="portfolio.html">PORTFOLIO</a></li>
+                        <li><a href="contact.html">CONTACT US</a></li>
                     </ul>
-                </div>
+                </nav>
             </div>
-            <div class="row">
-                <div class="address col-md-4">
-                    <p>2201 N. LAKEWOOD BLVD SUIT. 102 LONG BEACH, CA 90815</P>
+
+
+            <div>
+                <article class="page">
+                    <div class="hr"> </div>  	    
+                </article>
+            </div>
+
+            <!-- content -->
+            <article>
+                <h2 class="heading">Contact Us</h2>
+            </article>
+
+            <div class="row body">
+            <form class="container"   action="https://formspree.io/tmjohnson82@gmail.com"
+            method="POST">
+                <ul>
+                
+                <li>
+                    <p class="left">
+                    <label for="first_name">first name</label>
+                    <input type="text" name="first_name" placeholder="John" />
+                    </p>
+                    <p class="left">
+                    <label  for="last_name">last name</label>
+                    <input type="text" name="last_name" placeholder="Smith" />      
+                    </p>
+                </li>
+                
+                <li>
+                    <p class="email">
+                    <label for="email">email <span class="req">*</span></label>
+                    <input type="email" name="email" placeholder="john.smith@gmail.com" />
+                    </p>
+                </li>        
+                <li><div class="divider"></div></li>
+                <li class="comments">
+                    <label for="comments">comments</label>
+                    <textarea cols="46" rows="25" name="comments"></textarea>
+                </li>
+                
+                <li>
+                    <input class="btn btn-submit" type="submit" value="Send" />
+                    <small>or press <strong>enter</strong></small>
+                </li>
+                
+                </ul>
+            </form>  
+            </div>
+
+            <!-- site-footer -->
+            <footer class="site-footer">
+                <div class="col lt">
+                    <a href="home.html" >
+                        <img src="images/logo.png" class="logo logoft"/>
+                    </a>
+                    <div class="fcontact">
+                            <p>2201 N. LAKEWOOD BLVD SUIT. 102 LONG BEACH, CA 90815</P>
+                                <p class="email">  ALISHA@MORADESIGNINC.COM  <span class="phone">562.715.7178</span> </p>
+                    </div>
+                
                 </div>
-                <div class="col-md-4">
-                </div>
-                <div class="col-md-4">
-                </div>
-            </div>  
-            <div class="row">
-                <div class="contactInfo col-md-4">
-                    <p class="email">  ALISHA@MORADESIGNINC.COM  <span class="phone">562.715.7178</span> </p>
-                </div>
-                <div class="col-md-4">
-                </div>
-                <div class="col-md-4">
-                    <nav class="footer-nav">
-                        <ul>
-                            <li><a href="#">ABOUT US</a></li>
-                            <li><a href="#">DESIGN SERVICES</a></li>
-                            <li><a href="portfolio.html">PORTFOLIO</a></li>
-                            <li><a href="#">CONTACT US</a></li>
+                
+                <div class="col rt">
+                    
+                    <div class="flo">
+                        <ul class="social-media">
+                            <li><a href=""><img src="images/twitter.png" /></a></li>
+                            <li><a href="https://www.facebook.com/MoraDesignLLC/"><img src="images/facebook.png" /></a></li>
+                            <li><a href=""><img src="images/insta.png" /></a></li>
+                            <li><a href="https://www.pinterest.com/MoraDesignLLC/"><img src="images/pintrest.png" /></a></li>
                         </ul>
-                    </nav>
+                    </div>
+                        
+                    
+                    <div class="flo" style="clear:both">
+                        <ul class="fnav">
+                            <li><a href="about.html" class="flink">ABOUT US</a></li>
+                            <li><a href="portfolio.html" class="flink">PORTFOLIO</a></li>
+                            <li><a href="contact.html" class="flink">CONTACT US</a></li>
+                        </ul>  
+                    </div> 
+                            
                 </div>
-            </div>  
-            </div>           
-        </div>
-    </footer>
-</div>  <!-- container -->
-
-
-</body>
-
+        
+            </footer>
+        </div>  <!-- container -->
+    </body>
 </html>

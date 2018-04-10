@@ -1,272 +1,224 @@
 <!DOCUTYPE html>
-<head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta charset="UTF-8">
-    <title> Mora Design </title>
-    <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <script type="javascript" src="bootstrap/js/bootstrap.min.js"></script>
-    <script type="javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <script type="javascript" src="js/modal.js"></script>
-    
-</head>
-<body>
 <html>
-<!-- site header -->
-<div class='text-center'>
-    <header class="site-header">
-        <a href="home.html" >
-            <img src="images/logo.png" class="logo"/>
-        </a>
-    </header>
-    <!-- site navigation -->
-    <nav class="site-nav text-center">
-        <ul>
-            <li><a href="about.html">ABOUT US</a></li>
-            <li><a href="portfolio.html">PORTFOLIO</a></li>
-            <li><a href="contact.html">CONTACT US</a></li>
-        </ul>
-    </nav>
-</div>
-
-
-    <article class="page">
-        <div class="hr"> </div>  	    
-    </article>
-
-    <article>
-            <h2 class="heading">TRADITIONAL</h2>
-    </article>
-
-    <div class="container">
-        <div class="row">
-            <div class="column">
-                <img src="images/A-Traditional/Rossmore/A.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow" />
-                <img src="images/A-Traditional/Rossmore/B.jpg" onclick="openModal();currentSlide(2)" class="hover-shadow"/>
-                <img src="images/A-Traditional/Rossmore/C.jpg" onclick="openModal();currentSlide(3)" class="hover-shadow"/>
-                <img src="images/A-Traditional/Rossmore/D.jpg" onclick="openModal();currentSlide(4)" class="hover-shadow"/>
-                <img src="images/A-Traditional/Rossmore/E.jpg" onclick="openModal();currentSlide(5)" class="hover-shadow"/>          
-                <img src="images/A-Traditional/Rossmore/F.jpg" onclick="openModal();currentSlide(6)" class="hover-shadow"/>      
-                <img src="images/A-Traditional/Rossmore/G.jpg" onclick="openModal();currentSlide(7)" class="hover-shadow"/>
-            </div>
-            <div class="column">    
-                <img src="images/A-Traditional/Rossmore/H.jpg" onclick="openModal();currentSlide(8)" class="hover-shadow"/>
-                <img src="images/A-Traditional/Rossmore/I.jpg" onclick="openModal();currentSlide(9)" class="hover-shadow"/>
-                <img src="images/A-Traditional/Rossmore/J.jpg" onclick="openModal();currentSlide(10)" class="hover-shadow"/>
-                <img src="images/A-Traditional/Rossmore/K.jpg" onclick="openModal();currentSlide(11)" class="hover-shadow"/>
-                <img src="images/A-Traditional/Rossmore/L.jpg" onclick="openModal();currentSlide(12)" class="hover-shadow"/>
-                <img src="images/A-Traditional/Rossmore/M.jpg" onclick="openModal();currentSlide(13)" class="hover-shadow"/>
-
-            </div>
-            <div class="column">
-                <img src="images/A-Traditional/Rossmore/N.jpg" onclick="openModal();currentSlide(14)" class="hover-shadow"/>
-                <img src="images/A-Traditional/Rossmore/O.jpg" onclick="openModal();currentSlide(15)" class="hover-shadow"/>
-                <img src="images/A-Traditional/Rossmore/P.jpg" onclick="openModal();currentSlide(16)" class="hover-shadow"/>            
-                <img src="images/A-Traditional/Rossmore/Q.jpg" onclick="openModal();currentSlide(17)" class="hover-shadow"/>            
-                <img src="images/A-Traditional/Rossmore/R.jpg" onclick="openModal();currentSlide(18)" class="hover-shadow"/>
-                <img src="images/A-Traditional/Rossmore/S.jpg" onclick="openModal();currentSlide(19)" class="hover-shadow"/>
-                <img src="images/A-Traditional/Rossmore/T.jpg" onclick="openModal();currentSlide(20)" class="hover-shadow"/>
-            </div>
-            <!--<div class="column">
-                <img src="images/A-Traditional/Rossmore/U.jpg" />
-                <img src="images/A-Traditional/Rossmore/V.jpg" />
-                <img src="images/A-Traditional/Rossmore/W.jpg" />
-                <img src="images/A-Traditional/Rossmore/A.jpg" />
-                <img src="images/A-Traditional/Rossmore/X.jpg" />
-                <img src="images/A-Traditional/Rossmore/Y.jpg" />
-            </div>-->
-        </div>
-
-        <!-- The Modal/Lightbox -->
-        <div id="myModal" class="modal">
-        <span class="close cursor" onclick="closeModal()">&times;</span>
-        <div class="modal-content">
-
-            <div class="mySlides">
-                <div class="numbertext">1 / 20</div>
-                <img src="images/A-Traditional/Rossmore/A.jpg" style="width:100%">
-            </div>
-            <div class="mySlides">
-                <div class="numbertext">2 / 20</div>
-                <img src="images/A-Traditional/Rossmore/B.jpg" style="width:100%">
-            </div>
-            <div class="mySlides">
-                <div class="numbertext">3 / 20</div>
-                <img src="images/A-Traditional/Rossmore/C.jpg" style="width:100%">
-            </div>
-            <div class="mySlides">
-                <div class="numbertext">4 / 20</div>
-                <img src="images/A-Traditional/Rossmore/D.jpg" style="width:100%">
-            </div>
-            <div class="mySlides">
-                <div class="numbertext">5 / 20</div>
-                <img src="images/A-Traditional/Rossmore/E.jpg" style="width:100%">
-            </div>
-            <div class="mySlides">
-                <div class="numbertext">6 / 20</div>
-                <img src="images/A-Traditional/Rossmore/F.jpg" style="width:100%; height:800px;">
-            </div>
-            <div class="mySlides">
-                <div class="numbertext">7 / 20</div>
-                <img src="images/A-Traditional/Rossmore/G.jpg" style="width:100%">
-            </div>
-            <div class="mySlides">
-                <div class="numbertext">8 / 20</div>
-                <img src="images/A-Traditional/Rossmore/H.jpg" style="width:100%; height:800px;">
-            </div>
-            <div class="mySlides">
-                <div class="numbertext">9 / 20</div>
-                <img src="images/A-Traditional/Rossmore/I.jpg" style="width:100%">
-            </div>
-            <div class="mySlides">
-                <div class="numbertext">10 / 20</div>
-                <img src="images/A-Traditional/Rossmore/J.jpg" style="width:100%">
-            </div>
-            <div class="mySlides">
-                <div class="numbertext">11 / 20</div>
-                <img src="images/A-Traditional/Rossmore/K.jpg" style="width:100%">
-            </div>
-            <div class="mySlides">
-                <div class="numbertext">12 / 20</div>
-                <img src="images/A-Traditional/Rossmore/L.jpg" style="width:100%">
-            </div>
-            <div class="mySlides">
-                <div class="numbertext">13 / 20</div>
-                <img src="images/A-Traditional/Rossmore/M.jpg" style="width:100%">
-            </div>
-            <div class="mySlides">
-                <div class="numbertext">14 / 20</div>
-                <img src="images/A-Traditional/Rossmore/N.jpg" style="width:100%">
-            </div>
-            <div class="mySlides">
-                <div class="numbertext">15 / 20</div>
-                <img src="images/A-Traditional/Rossmore/O.jpg" style="width:100%">
-            </div>
-            <div class="mySlides">
-                <div class="numbertext">16 / 20</div>
-                <img src="images/A-Traditional/Rossmore/P.jpg" style="width:100%">
-            </div>
-            <div class="mySlides">
-                <div class="numbertext">17 / 20</div>
-                <img src="images/A-Traditional/Rossmore/Q.jpg" style="width:100%">
-            </div>
-            <div class="mySlides">
-                <div class="numbertext">18 / 20</div>
-                <img src="images/A-Traditional/Rossmore/R.jpg" style="width:100%">
-            </div>
-            <div class="mySlides">
-                <div class="numbertext">19 / 20</div>
-                <img src="images/A-Traditional/Rossmore/S.jpg" style="width:100%">
-            </div>
-            <div class="mySlides">
-                <div class="numbertext">20 / 20</div>
-                <img src="images/A-Traditional/Rossmore/T.jpg" style="width:100%">
-            </div>
-
-           
-
-            <!-- Next/previous controls -->
-            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-            <a class="next" onclick="plusSlides(1)">&#10095;</a>
-        </div>
-
-    </div>
-</div>   
-
-    <footer class="site-footer">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-4">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="UTF-8">
+        <title> Mora Design </title>
+        <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <script type="javascript" src="bootstrap/js/bootstrap.min.js"></script>
+        <script type="javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script type="javascript" src="js/modal.js"></script>
+    </head>
+    <body>
+        <div class="container"> 
+            <!-- site header -->
+            <div class='text-center'>
+                <header class="site-header">
                     <a href="home.html" >
                         <img src="images/logo.png" class="logo"/>
                     </a>
-                </div>
-                <div class="col-md-4">
-                </div>    
-                <div class="col-md-4">
-                    <ul class="social-media">
-                        <li><a href=""><img src="images/twitter.png" /></a></li>
-                        <li><a href=""><img src="images/facebook.png" /></a></li>
-                        <li><a href=""><img src="images/insta.png" /></a></li>
-                        <li><a href=""><img src="images/pintrest.png" /></a></li>
+                </header>
+                <!-- site navigation -->
+                <nav class="site-nav text-center">
+                    <ul>
+                        <li><a href="about.html">ABOUT US</a></li>
+                        <li><a href="portfolio.html">PORTFOLIO</a></li>
+                        <li><a href="contact.html">CONTACT US</a></li>
                     </ul>
-                </div>
+                </nav>
             </div>
-            <div class="row">
-                <div class="address col-md-4">
-                    <p>2201 N. LAKEWOOD BLVD SUIT. 102 LONG BEACH, CA 90815</P>
+            <article class="page">
+                <div class="hr"> </div>  	    
+            </article>
+            <article>
+                    <h2 class="heading">TRADITIONAL</h2>
+            </article>
+
+            <div class="Row">
+                <div class="column">
+                    <img src="images/A-Traditional/Rossmore/A-min.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow" />
+                    <img src="images/A-Traditional/Rossmore/B-min.jpg" onclick="openModal();currentSlide(2)" class="hover-shadow"/>
+                    <img src="images/A-Traditional/Rossmore/C-min.jpg" onclick="openModal();currentSlide(3)" class="hover-shadow"/>
+                    <img src="images/A-Traditional/Rossmore/D-min.jpg" onclick="openModal();currentSlide(4)" class="hover-shadow"/>
+                    <img src="images/A-Traditional/Rossmore/E-min.jpg" onclick="openModal();currentSlide(5)" class="hover-shadow"/>          
+                    <img src="images/A-Traditional/Rossmore/F-min.jpg" onclick="openModal();currentSlide(6)" class="hover-shadow"/>      
+                    <img src="images/A-Traditional/Rossmore/G-min.jpg" onclick="openModal();currentSlide(7)" class="hover-shadow"/>
                 </div>
-                <div class="col-md-4">
+                <div class="column">    
+                    <img src="images/A-Traditional/Rossmore/H-min.jpg" onclick="openModal();currentSlide(8)" class="hover-shadow"/>
+                    <img src="images/A-Traditional/Rossmore/I-min.jpg" onclick="openModal();currentSlide(9)" class="hover-shadow"/>
+                    <img src="images/A-Traditional/Rossmore/J-min.jpg" onclick="openModal();currentSlide(10)" class="hover-shadow"/>
+                    <img src="images/A-Traditional/Rossmore/K-min.jpg" onclick="openModal();currentSlide(11)" class="hover-shadow"/>
+                    <img src="images/A-Traditional/Rossmore/L-min.jpg" onclick="openModal();currentSlide(12)" class="hover-shadow"/>
+                    <img src="images/A-Traditional/Rossmore/M-min.jpg" onclick="openModal();currentSlide(13)" class="hover-shadow"/>
+
                 </div>
-                <div class="col-md-4">
+                <div class="column">
+                    <img src="images/A-Traditional/Rossmore/N-min.jpg" onclick="openModal();currentSlide(14)" class="hover-shadow"/>
+                    <img src="images/A-Traditional/Rossmore/O-min.jpg" onclick="openModal();currentSlide(15)" class="hover-shadow"/>
+                    <img src="images/A-Traditional/Rossmore/P-min.jpg" onclick="openModal();currentSlide(16)" class="hover-shadow"/>            
+                    <img src="images/A-Traditional/Rossmore/Q-min.jpg" onclick="openModal();currentSlide(17)" class="hover-shadow"/>            
+                    <img src="images/A-Traditional/Rossmore/R-min.jpg" onclick="openModal();currentSlide(18)" class="hover-shadow"/>
+                    <img src="images/A-Traditional/Rossmore/S-min.jpg" onclick="openModal();currentSlide(19)" class="hover-shadow"/>
+                    <img src="images/A-Traditional/Rossmore/T-min.jpg" onclick="openModal();currentSlide(20)" class="hover-shadow"/>
                 </div>
-            </div>  
-            <div class="row">
-                <div class="contactInfo col-md-4">
-                    <p class="email">  ALISHA@MORADESIGNINC.COM  <span class="phone">562.715.7178</span> </p>
+                <!--<div class="column">
+                    <img src="images/A-Traditional/Rossmore/
+                    U-min.jpg" />
+                    <img src="images/A-Traditional/Rossmore/
+                    V-min.jpg" />
+                    <img src="images/A-Traditional/Rossmore/
+                    W-min.jpg" />
+                    <img src="images/A-Traditional/Rossmore/
+                    A-min.jpg" />
+                    <img src="images/A-Traditional/Rossmore/
+                    X-min.jpg" />
+                    <img src="images/A-Traditional/Rossmore/
+                    Y-min.jpg" />
+                </div>-->
+            </div>
+                
+            <!-- The Modal/RossmoreLightbox -->
+            <div id="myModal" class="modal">
+                
+                <span class="close cursor" onclick="closeModal()">&times;</span>
+                <!-- Next/previous contRols -->
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                <div class="modal-content">
+                    <div class="mySlides">
+                        <img class="pic" src="images/A-Traditional/Rossmore/A-min.jpg" style="width:100%">
+                    </div>
+                    <div class="mySlides">
+                        <img class="pic" src="images/A-Traditional/Rossmore/B-min.jpg" style="width:100%">
+                    </div>
+                    <div class="mySlides">
+                        <img class="pic" src="images/A-Traditional/Rossmore/C-min.jpg" style="width:100%">
+                    </div>
+                    <div class="mySlides">
+                        <img class="pic" src="images/A-Traditional/Rossmore/D-min.jpg" style="width:100%">
+                    </div>
+                    <div class="mySlides">
+                        <img class="pic" src="images/A-Traditional/Rossmore/E-min.jpg" style="width:100%">
+                    </div>
+                    <div class="mySlides">
+                        <img class="pic"src="images/A-Traditional/Rossmore/F-min.jpg" style="width:100%;">
+                    </div>
+                    <div class="mySlides">
+                        <img class="pic" src="images/A-Traditional/Rossmore/G-min.jpg" style="width:100%">
+                    </div>
+                    <div class="mySlides">
+                        <img class="pic" src="images/A-Traditional/Rossmore/H-min.jpg" style="width:100%; height:800px;">
+                    </div>
+                    <div class="mySlides">
+                        <img class="pic" src="images/A-Traditional/Rossmore/I-min.jpg" style="width:100%">
+                    </div>
+                    <div class="mySlides">
+                        <img class="pic" src="images/A-Traditional/Rossmore/J-min.jpg" style="width:100%">
+                    </div>
+                    <div class="mySlides">
+                        <img class="pic" src="images/A-Traditional/Rossmore/K-min.jpg" style="width:100%">
+                    </div>
+                    <div class="mySlides">
+                        <img class="pic" src="images/A-Traditional/Rossmore/L-min.jpg" style="width:100%">
+                    </div>
+                    <div class="mySlides">
+                        <img class="pic" src="images/A-Traditional/Rossmore/M-min.jpg" style="width:100%">
+                    </div>
+                    <div class="mySlides">
+                        <img class="pic" src="images/A-Traditional/Rossmore/N-min.jpg" style="width:100%">
+                    </div>
+                    <div class="mySlides">
+                        <img class="pic" src="images/A-Traditional/Rossmore/O-min.jpg" style="width:100%">
+                    </div>
+                    <div class="mySlides">
+                        <img class="pic" src="images/A-Traditional/Rossmore/P-min.jpg" style="width:100%">
+                    </div>
+                    <div class="mySlides">
+                        <img class="pic" src="images/A-Traditional/Rossmore/Q-min.jpg" style="width:100%">
+                    </div>
+                    <div class="mySlides">
+                        <img class="pic" src="images/A-Traditional/Rossmore/R-min.jpg" style="width:100%">
+                    </div>
+                    <div class="mySlides">
+                        <img class="pic" src="images/A-Traditional/Rossmore/S-min.jpg" style="width:100%">
+                    </div>
+                    <div class="mySlides">
+                        <img class="pic" src="images/A-Traditional/Rossmore/T-min.jpg" style="width:100%">
+                    </div>  
+                </div> <!-- End of Modal Content-->
+            </div> <!-- End of Modal -->
+            <!-- site-footer -->
+            <footer class="site-footer">
+                <div class="col lt">
+                    <a href="home.html" >
+                        <img src="images/logo.png" class="logo logoft"/>
+                    </a>
+                    <div class="fcontact">
+                        <p>2201 N. LAKEWOOD BLVD SUIT. 102 LONG BEACH, CA 90815</P>
+                        <p class="email">  ALISHA@MORADESIGNINC.COM  <span class="phone">562.715.7178</span> </p>
+                    </div>
                 </div>
-                <div class="col-md-4">
-                </div>
-                <div class="col-md-4">
-                    <nav class="footer-nav">
-                        <ul>
-                            <li><a href="#">ABOUT US</a></li>
-                            <li><a href="#">DESIGN SERVICES</a></li>
-                            <li><a href="portfolio.html">PORTFOLIO</a></li>
-                            <li><a href="#">CONTACT US</a></li>
+                <div class="col rt">
+                    <div class="flo">
+                        <ul class="social-media">
+                            <li><a href=""><img src="images/twitter.png" /></a></li>
+                            <li><a href="https://www.facebook.com/MoraDesignLLC/"><img src="images/facebook.png" /></a></li>
+                            <li><a href=""><img src="images/insta.png" /></a></li>
+                            <li><a href="https://www.pinterest.com/MoraDesignLLC/"><img src="images/pintrest.png" /></a></li>
                         </ul>
-                    </nav>
+                    </div>
+                    <div class="flo" style="clear:both">
+                        <ul class="fnav">
+                            <li><a href="about.html" class="flink">ABOUT US</a></li>
+                            <li><a href="portfolio.html" class="flink">PORTFOLIO</a></li>
+                            <li><a href="contact.html" class="flink">CONTACT US</a></li>
+                        </ul>  
+                    </div>          
                 </div>
-            </div>  
-            </div>           
-        </div>
-    </footer>
+            </footer>
+        </div>   <!-- END CONTENT -->
+        <script>
+        // Open the Modal
+        function openModal() {
+        document.getElementById('myModal').style.display = "block";
+        }
 
-    <script>
-// Open the Modal
-function openModal() {
-  document.getElementById('myModal').style.display = "block";
-}
+        // Close the Modal
+        function closeModal() {
+        document.getElementById('myModal').style.display = "none";
+        }
 
-// Close the Modal
-function closeModal() {
-  document.getElementById('myModal').style.display = "none";
-}
+        var slideIndex = 1;
+        showSlides(slideIndex);
 
-var slideIndex = 1;
-showSlides(slideIndex);
+        // Next/previous contRols
+        function plusSlides(n) {
+        showSlides(slideIndex += n);
+        }
 
-// Next/previous controls
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
+        // Thumbnail image contRols
+        function currentSlide(n) {
+        showSlides(slideIndex = n);
+        }
 
-// Thumbnail image controls
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
-
-function showSlides(n) {
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("demo");
-  if (n > slides.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
-  }
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";
-  dots[slideIndex-1].className += " active";
-  captionText.innerHTML = dots[slideIndex-1].alt;
-}
-</script>
-
-
-
-
-</body>
-
+        function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("demo");
+        if (n > slides.length) {slideIndex = 1}
+        if (n < 1) {slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";
+        dots[slideIndex-1].className += " active";
+        captionText.innerHTML = dots[slideIndex-1].alt;
+        }
+        </script>
+    </body>
 </html>

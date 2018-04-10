@@ -1,0 +1,151 @@
+<!DOCUTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="UTF-8">
+        <title> Mora Design </title>
+        <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <script type="javascript" src="bootstrap/js/bootstrap.min.js"></script>
+        <script type="javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script type="javascript" src="js/modal.js"></script>
+    </head>
+    <body>
+        <div class="container"> 
+            <!-- site header -->
+            <div class='text-center'>
+                <header class="site-header">
+                    <a href="home.html" >
+                        <img src="images/logo.png" class="logo"/>
+                    </a>
+                </header>
+                <!-- site navigation -->
+                <nav class="site-nav text-center">
+                    <ul>
+                        <li><a href="about.html">ABOUT US</a></li>
+                        <li><a href="portfolio.html">PORTFOLIO</a></li>
+                        <li><a href="contact.html">CONTACT US</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <article class="page">
+                <div class="hr"> </div>  	    
+            </article>
+            <article>
+                    <h2 class="heading">EXTERIORS</h2>
+            </article>
+
+            <div class="row">
+                <div class="column">
+                    <img src="images/A-Exteriors/A-min.JPG" onclick="openModal();currentSlide(1)" class="hover-shadow" />
+                </div>
+                <div class="column">    
+                    <img src="images/A-Exteriors/B-min.JPG" onclick="openModal();currentSlide(8)" class="hover-shadow"/>
+                </div>
+                <div class="column">
+                </div>
+                <!--<div class="column">
+                    <img src="images/A-Exteriors/
+                    U.jpg" />
+                    <img src="images/A-Exteriors/
+                    V.jpg" />
+                    <img src="images/A-Exteriors/
+                    W.jpg" />
+                    <img src="images/A-Exteriors/
+                    A.jpg" />
+                    <img src="images/A-Exteriors/
+                    X.jpg" />
+                    <img src="images/A-Exteriors/
+                    Y.jpg" />
+                </div>-->
+            </div>
+                
+            <!-- The Modal/Lightbox -->
+            <div id="myModal" class="modal">
+                
+                <span class="close cursor" onclick="closeModal()">&times;</span>
+                <!-- Next/previous controls -->
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                <div class="modal-content">
+                    <div class="mySlides">
+                        <img class="pic" src="images/A-Exteriors/A.jpg" style="width:100%">
+                    </div>
+                    <div class="mySlides">
+                        <img class="pic" src="images/A-Exteriors/B.jpg" style="width:100%">
+                    </div>
+                </div> <!-- End of Modal Content-->
+            </div> <!-- End of Modal -->
+            <!-- site-footer -->
+            <footer class="site-footer">
+                <div class="col lt">
+                    <a href="home.html" >
+                        <img src="images/logo.png" class="logo logoft"/>
+                    </a>
+                    <div class="fcontact">
+                        <p>2201 N. LAKEWOOD BLVD SUIT. 102 LONG BEACH, CA 90815</P>
+                        <p class="email">  ALISHA@MORADESIGNINC.COM  <span class="phone">562.715.7178</span> </p>
+                    </div>
+                </div>
+                <div class="col rt">
+                    <div class="flo">
+                        <ul class="social-media">
+                            <li><a href=""><img src="images/twitter.png" /></a></li>
+                            <li><a href="https://www.facebook.com/MoraDesignLLC/"><img src="images/facebook.png" /></a></li>
+                            <li><a href=""><img src="images/insta.png" /></a></li>
+                            <li><a href="https://www.pinterest.com/MoraDesignLLC/"><img src="images/pintrest.png" /></a></li>
+                        </ul>
+                    </div>
+                    <div class="flo" style="clear:both">
+                        <ul class="fnav">
+                            <li><a href="about.html" class="flink">ABOUT US</a></li>
+                            <li><a href="portfolio.html" class="flink">PORTFOLIO</a></li>
+                            <li><a href="contact.html" class="flink">CONTACT US</a></li>
+                        </ul>  
+                    </div>          
+                </div>
+            </footer>
+        </div>   <!-- END CONTENT -->
+        <script>
+        // Open the Modal
+        function openModal() {
+        document.getElementById('myModal').style.display = "block";
+        }
+
+        // Close the Modal
+        function closeModal() {
+        document.getElementById('myModal').style.display = "none";
+        }
+
+        var slideIndex = 1;
+        showSlides(slideIndex);
+
+        // Next/previous controls
+        function plusSlides(n) {
+        showSlides(slideIndex += n);
+        }
+
+        // Thumbnail image controls
+        function currentSlide(n) {
+        showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("demo");
+        if (n > slides.length) {slideIndex = 1}
+        if (n < 1) {slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";
+        dots[slideIndex-1].className += " active";
+        captionText.innerHTML = dots[slideIndex-1].alt;
+        }
+        </script>
+    </body>
+</html>

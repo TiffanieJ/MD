@@ -1,0 +1,217 @@
+<!DOCUTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="UTF-8">
+        <title> Mora Design </title>
+        <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <script type="javascript" src="bootstrap/js/bootstrap.min.js"></script>
+        <script type="javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script type="javascript" src="js/modal.js"></script>
+    </head>
+    <body>
+        <div class="container"> 
+            <!-- site header -->
+            <div class='text-center'>
+                <header class="site-header">
+                    <a href="home.html" >
+                        <img src="images/logo.png" class="logo"/>
+                    </a>
+                </header>
+                <!-- site navigation -->
+                <nav class="site-nav text-center">
+                    <ul>
+                        <li><a href="about.html">ABOUT US</a></li>
+                        <li><a href="portfolio.html">PORTFOLIO</a></li>
+                        <li><a href="contact.html">CONTACT US</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <article class="page">
+                <div class="hr"> </div>  	    
+            </article>
+            <article>
+                    <h2 class="heading">MOUNTAIN</h2>
+            </article>
+
+            <div class="row">
+                <div class="column">
+                    <img src="images/A-Mountain/A-min.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow" />
+                    <img src="images/A-Mountain/B-min.jpg" onclick="openModal();currentSlide(2)" class="hover-shadow"/>
+                    <img src="images/A-Mountain/C-min.jpg" onclick="openModal();currentSlide(3)" class="hover-shadow"/>
+                    <img src="images/A-Mountain/D-min.jpg" onclick="openModal();currentSlide(4)" class="hover-shadow"/>
+                    <img src="images/A-Mountain/E-min.jpg" onclick="openModal();currentSlide(5)" class="hover-shadow"/>          
+                    <img src="images/A-Mountain/F-min.jpg" onclick="openModal();currentSlide(6)" class="hover-shadow"/>      
+                    <img src="images/A-Mountain/G-min.jpg" onclick="openModal();currentSlide(7)" class="hover-shadow"/>
+                </div>
+                <div class="column">    
+                    <img src="images/A-Mountain/H-min.jpg" onclick="openModal();currentSlide(8)" class="hover-shadow"/>
+                    <img src="images/A-Mountain/I-min.jpg" onclick="openModal();currentSlide(9)" class="hover-shadow"/>
+                    <img src="images/A-Mountain/J-min.jpg" onclick="openModal();currentSlide(10)" class="hover-shadow"/>
+                    <img src="images/A-Mountain/K-min.jpg" onclick="openModal();currentSlide(11)" class="hover-shadow"/>
+                    <img src="images/A-Mountain/L-min.jpg" onclick="openModal();currentSlide(12)" class="hover-shadow"/>
+                    <img src="images/A-Mountain/M-min.jpg" onclick="openModal();currentSlide(13)" class="hover-shadow"/>
+
+                </div>
+                <div class="column">
+                    <img src="images/A-Mountain/N-min.jpg" onclick="openModal();currentSlide(14)" class="hover-shadow"/>
+                    <img src="images/A-Mountain/O-min.jpg" onclick="openModal();currentSlide(15)" class="hover-shadow"/>
+                    <img src="images/A-Mountain/P-min.jpg" onclick="openModal();currentSlide(16)" class="hover-shadow"/>            
+                    <img src="images/A-Mountain/Q-min.jpg" onclick="openModal();currentSlide(17)" class="hover-shadow"/>            
+                    <img src="images/A-Mountain/R-min.jpg" onclick="openModal();currentSlide(18)" class="hover-shadow"/>
+                    <img src="images/A-Mountain/S-min.jpg" onclick="openModal();currentSlide(19)" class="hover-shadow"/>
+                </div>
+                <!--<div class="column">
+                    <img src="images/A-Mountain/U-min.jpg" />
+                    <img src="images/A-Mountain/V-min.jpg" />
+                    <img src="images/A-Mountain/W-min.jpg" />
+                    <img src="images/A-Mountain/A-min.jpg" />
+                    <img src="images/A-Mountain/X-min.jpg" />
+                    <img src="images/A-Mountain/Y-min.jpg" />
+                </div>-->
+            </div>
+                
+            <!-- The Modal/Lightbox -->
+            <div id="myModal" class="modal">
+                
+                <span class="close cursor" onclick="closeModal()">&times;</span>
+                <!-- Next/previous controls -->
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                <div class="modal-content">
+                    <div class="mySlides">
+                        <img class="pic" src="images/A-Mountain/A-min.jpg" style="width:100%">
+                    </div>
+                    <div class="mySlides">
+                        <img class="pic" src="images/A-Mountain/B-min.jpg" style="width:100%">
+                    </div>
+                    <div class="mySlides">
+                        <img class="pic" src="images/A-Mountain/C-min.jpg" style="width:100%">
+                    </div>
+                    <div class="mySlides">
+                        <img class="pic" src="images/A-Mountain/D-min.jpg" style="width:100%">
+                    </div>
+                    <div class="mySlides">
+                        <img class="pic" src="images/A-Mountain/E-min.jpg" style="width:100%">
+                    </div>
+                    <div class="mySlides">
+                        <img class="pic"src="images/A-Mountain/F-min.jpg" style="width:100%;">
+                    </div>
+                    <div class="mySlides">
+                        <img class="pic" src="images/A-Mountain/G-min.jpg" style="width:100%">
+                    </div>
+                    <div class="mySlides">
+                        <img class="pic" src="images/A-Mountain/H-min.jpg" style="width:100%; height:800px;">
+                    </div>
+                    <div class="mySlides">
+                        <img class="pic" src="images/A-Mountain/I-min.jpg" style="width:100%">
+                    </div>
+                    <div class="mySlides">
+                        <img class="pic" src="images/A-Mountain/J-min.jpg" style="width:100%">
+                    </div>
+                    <div class="mySlides">
+                        <img class="pic" src="images/A-Mountain/K-min.jpg" style="width:100%">
+                    </div>
+                    <div class="mySlides">
+                        <img class="pic" src="images/A-Mountain/L-min.jpg" style="width:100%">
+                    </div>
+                    <div class="mySlides">
+                        <img class="pic" src="images/A-Mountain/M-min.jpg" style="width:100%">
+                    </div>
+                    <div class="mySlides">
+                        <img class="pic" src="images/A-Mountain/N-min.jpg" style="width:100%">
+                    </div>
+                    <div class="mySlides">
+                        <img class="pic" src="images/A-Mountain/O-min.jpg" style="width:100%">
+                    </div>
+                    <div class="mySlides">
+                        <img class="pic" src="images/A-Mountain/P-min.jpg" style="width:100%">
+                    </div>
+                    <div class="mySlides">
+                        <img class="pic" src="images/A-Mountain/Q-min.jpg" style="width:100%">
+                    </div>
+                    <div class="mySlides">
+                        <img class="pic" src="images/A-Mountain/R-min.jpg" style="width:100%">
+                    </div>
+                    <div class="mySlides">
+                        <img class="pic" src="images/A-Mountain/S-min.jpg" style="width:100%">
+                    </div>
+                    <div class="mySlides">
+                        <img class="pic" src="images/A-Mountain/T-min.jpg" style="width:100%">
+                    </div>  
+                </div> <!-- End of Modal Content-->
+            </div> <!-- End of Modal -->
+            <!-- site-footer -->
+            <footer class="site-footer">
+                <div class="col lt">
+                    <a href="home.html" >
+                        <img src="images/logo.png" class="logo logoft"/>
+                    </a>
+                    <div class="fcontact">
+                        <p>2201 N. LAKEWOOD BLVD SUIT. 102 LONG BEACH, CA 90815</P>
+                        <p class="email">  ALISHA@MORADESIGNINC.COM  <span class="phone">562.715.7178</span> </p>
+                    </div>
+                </div>
+                <div class="col rt">
+                    <div class="flo">
+                        <ul class="social-media">
+                            <li><a href=""><img src="images/twitter.png" /></a></li>
+                            <li><a href="https://www.facebook.com/MoraDesignLLC/"><img src="images/facebook.png" /></a></li>
+                            <li><a href=""><img src="images/insta.png" /></a></li>
+                            <li><a href="https://www.pinterest.com/MoraDesignLLC/"><img src="images/pintrest.png" /></a></li>
+                        </ul>
+                    </div>
+                    <div class="flo" style="clear:both">
+                        <ul class="fnav">
+                            <li><a href="about.html" class="flink">ABOUT US</a></li>
+                            <li><a href="portfolio.html" class="flink">PORTFOLIO</a></li>
+                            <li><a href="contact.html" class="flink">CONTACT US</a></li>
+                        </ul>  
+                    </div>          
+                </div>
+            </footer>
+        </div>   <!-- END CONTENT -->
+        <script>
+        // Open the Modal
+        function openModal() {
+        document.getElementById('myModal').style.display = "block";
+        }
+
+        // Close the Modal
+        function closeModal() {
+        document.getElementById('myModal').style.display = "none";
+        }
+
+        var slideIndex = 1;
+        showSlides(slideIndex);
+
+        // Next/previous controls
+        function plusSlides(n) {
+        showSlides(slideIndex += n);
+        }
+
+        // Thumbnail image controls
+        function currentSlide(n) {
+        showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("demo");
+        if (n > slides.length) {slideIndex = 1}
+        if (n < 1) {slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";
+        dots[slideIndex-1].className += " active";
+        captionText.innerHTML = dots[slideIndex-1].alt;
+        }
+        </script>
+    </body>
+</html>
